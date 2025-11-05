@@ -104,9 +104,9 @@ Para organizaciones que apoyan a la comunidad tecnológica:
 
 1. **Crea una rama descriptiva**
 
-   \`\`\`bash
+   ```bash
    git checkout -b tipo/descripcion-corta
-   \`\`\`
+   ```
 
    Ejemplos:
 
@@ -117,24 +117,24 @@ Para organizaciones que apoyan a la comunidad tecnológica:
 
 2. **Haz commits pequeños y descriptivos**
 
-   \`\`\`bash
+   ```bash
    git add .
    git commit -m "tipo: descripción concisa"
-   \`\`\`
+   ```
 
 3. **Prueba tus cambios localmente**
 
-   \`\`\`bash
-   npm run dev      # Verifica que todo funcione
-   npm run build    # Asegúrate que compile sin errores
-   npm run lint     # Revisa errores de estilo
-   \`\`\`
+   ```bash
+   npm run dev # Verifica que todo funcione
+   npm run build # Asegúrate que compile sin errores
+   npm run lint # Revisa errores de estilo
+   ```
 
 4. **Push a tu fork**
 
-   \`\`\`bash
+   ```bash
    git push origin nombre-de-tu-rama
-   \`\`\`
+   ```
 
 5. **Crea el Pull Request**
    - Ve a GitHub y haz clic en "Compare & Pull Request"
@@ -143,7 +143,7 @@ Para organizaciones que apoyan a la comunidad tecnológica:
 
 ### Plantilla de Pull Request
 
-\`\`\`markdown
+```markdown
 ## Descripción
 
 <!-- Describe qué cambios introduce este PR -->
@@ -173,7 +173,7 @@ Para organizaciones que apoyan a la comunidad tecnológica:
 ## Información adicional
 
 <!-- Cualquier contexto adicional sobre el PR -->
-\`\`\`
+```
 
 ### Revisión del PR
 
@@ -186,7 +186,7 @@ Para organizaciones que apoyan a la comunidad tecnológica:
 
 ### Código TypeScript/React
 
-\`\`\`typescript
+```typescript
 // ✅ Bien
 interface Community {
   id: string;
@@ -199,7 +199,7 @@ interface community {
   ID: string;
   Name: string;
 }
-\`\`\`
+```
 
 **Reglas:**
 
@@ -212,17 +212,17 @@ interface community {
 
 ### Estructura de Archivos
 
-\`\`\`
+```
 data/
-  ├── communities.ts    # Datos de comunidades
-  ├── events.ts         # Datos de eventos
-  └── sponsors.ts       # Datos de patrocinadores
+├── communities.ts # Datos de comunidades
+├── events.ts # Datos de eventos
+└── sponsors.ts # Datos de patrocinadores
 
 components/
-  ├── ui/              # Componentes reutilizables de UI
-  ├── header.tsx       # Componente específico
-  └── footer.tsx       # Componente específico
-\`\`\`
+├── ui/ # Componentes reutilizables de UI
+├── header.tsx # Componente específico
+└── footer.tsx # Componente específico
+```
 
 ### Formato de Datos
 
@@ -258,7 +258,7 @@ components/
 
 ### Componentes React
 
-\`\`\`typescript
+```typescript
 // ✅ Componente bien estructurado
 interface ButtonProps {
   onClick: () => void;
@@ -280,7 +280,7 @@ export function Button({
     </button>
   );
 }
-\`\`\`
+```
 
 ### CSS/Tailwind
 
@@ -288,25 +288,27 @@ export function Button({
 - Mantén las clases ordenadas: layout → spacing → typography → colors
 - Usa las variables de color del tema (`primary`, `secondary`, etc.)
 
-\`\`\`tsx
+```tsx
 // ✅ Bien
+
 <div className="flex flex-col gap-4 p-6 text-lg text-foreground bg-card">
 
 // ❌ Evitar
+
 <div className="text-lg p-6 bg-card flex gap-4 text-foreground flex-col">
-\`\`\`
+```
 
 ## 📝 Estructura de Commits
 
 Usa [Conventional Commits](https://www.conventionalcommits.org/):
 
-\`\`\`
+```
 tipo(alcance): descripción corta
 
 [cuerpo opcional]
 
 [footer opcional]
-\`\`\`
+```
 
 ### Tipos de Commits
 
@@ -320,19 +322,24 @@ tipo(alcance): descripción corta
 
 ### Ejemplos
 
-\`\`\`bash
+```bash
+
 # Agregar comunidad
+
 git commit -m "feat(communities): agregar GDG Monterrey"
 
 # Corregir bug
+
 git commit -m "fix(events): corregir formato de fecha en calendario"
 
 # Actualizar docs
+
 git commit -m "docs(readme): actualizar instrucciones de contribución"
 
 # Mejorar estilos
+
 git commit -m "style(communities): mejorar aspecto ratio de logos"
-\`\`\`
+```
 
 ## ✅ Checklist antes de hacer PR
 

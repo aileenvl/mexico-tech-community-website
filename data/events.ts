@@ -40,4 +40,31 @@ export const eventsData: Event[] = [
     attendees: 50,
     link: "https://luma.com/m4w80tw3",
   },
+  {
+    id: "pytalavera-charlas-networking-dic-2025",
+    title: "Python Charlas en Puebla + Networking",
+    description:
+      "Únete a la comunidad Pythonista en Puebla para una tarde de charlas técnicas y networking. Comparte conocimiento, aprende nuevas técnicas y conecta con otros desarrolladores Python en la región. Evento ideal para todos los niveles, desde principiantes hasta expertos.",
+    date: "2025-12-04",
+    time: "18:00",
+    location: "Por confirmar, Puebla",
+    city: "Puebla",
+    community: "PyTalavera",
+    attendees: 50,
+    link: "https://luma.com/s3rpjdgx",
+  },
+  {
+    id: "posadev-2025",
+    title: "PosaDev 2025",
+    description:
+      "El evento anual que conecta, inspira y fortalece las comunidades de tecnología. Hecho con amor para la comunidad tech. Explora desde desarrollo de software hasta diseño UX, gestión de proyectos, testing y cada disciplina que impulsa la transformación digital.",
+    date: "2025-12-06",
+    time: "09:00",
+    location:
+      "Centro de Congresos del Tecnológico de Monterrey, Campus Guadalajara, Av. General Ramón Corona 2515C, Valle Real, Zapopan",
+    city: "Guadalajara",
+    community: "PosaDev",
+    attendees: 200,
+    link: "https://posadev.org/",
+  },
 ];

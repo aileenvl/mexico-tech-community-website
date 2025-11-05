@@ -200,6 +200,87 @@ export const communitiesData: Community[] = [
       website: "https://cursor.com/",
     },
   },
+  {
+    id: "pytalavera-puebla",
+    name: "PyTalavera",
+    nameEs: "PyTalavera",
+    description:
+      "Python community in Puebla. A group of Python enthusiasts sharing knowledge, best practices, and building projects together. From beginners to experts, all Pythonistas are welcome.",
+    descriptionEs:
+      "Comunidad Pythonista en Puebla. Un grupo de entusiastas de Python compartiendo conocimiento, mejores prácticas y construyendo proyectos juntos. Desde principiantes hasta expertos, todos los Pythonistas son bienvenidos.",
+    focus: [
+      "Python",
+      "Data Science",
+      "Machine Learning",
+      "Web Development",
+      "Backend",
+    ],
+    focusEs: [
+      "Python",
+      "Ciencia de Datos",
+      "Machine Learning",
+      "Desarrollo Web",
+      "Backend",
+    ],
+    members: 150,
+    meetups: 12,
+    image: "/pytalavera.jpeg",
+    category: "Backend / Database",
+    state: "Puebla",
+    stateEs: "Puebla",
+    city: "Puebla",
+    contacts: [
+      {
+        name: "Gabriel Gómez Téllez",
+        role: "Community Lead",
+        roleEs: "Líder de Comunidad",
+        bio: "Backend, ML & Data Engineer with 7+ years of experience turning data into business results.",
+        bioEs:
+          "Ingeniero Backend, ML y Datos con más de 7 años de experiencia convirtiendo datos en resultados de negocio.",
+        socials: {
+          linkedin: "https://linkedin.com/in/gabrielgomezt",
+        },
+      },
+    ],
+    links: {
+      linkedin: "https://linkedin.com/company/106000587",
+    },
+  },
+  {
+    id: "aws-ug-mixtli",
+    name: "AWS User Group Mixtli",
+    nameEs: "AWS User Group Mixtli",
+    description:
+      "We are a community passionate about Amazon Web Services (AWS) and its ecosystem. Join us to learn, share knowledge, and connect with other AWS enthusiasts in México. From beginners to certified professionals, all are welcome.",
+    descriptionEs:
+      "Somos una comunidad apasionada por Amazon Web Services (AWS) y su ecosistema. Únete para aprender, compartir conocimiento y conectar con otros entusiastas de AWS en México. Desde principiantes hasta profesionales certificados, todos son bienvenidos.",
+    focus: ["AWS", "Cloud", "DevOps", "Infrastructure", "Serverless"],
+    focusEs: ["AWS", "Nube", "DevOps", "Infraestructura", "Serverless"],
+    members: 257,
+    meetups: 15,
+    image: "/awsugmixtli_logo.jpeg",
+    category: "Backend / Database",
+    state: "Puebla",
+    stateEs: "Puebla",
+    city: "Puebla",
+    contacts: [
+      {
+        name: "Mariano Rodriguez",
+        role: "Community Organizer",
+        roleEs: "Organizador de Comunidad",
+        socials: {},
+      },
+      {
+        name: "Ana Reyna",
+        role: "Community Organizer",
+        roleEs: "Organizadora de Comunidad",
+        socials: {},
+      },
+    ],
+    links: {
+      website: "https://awsugmixtli.com",
+    },
+  },
 ];
 
 export const MEXICAN_STATES = [

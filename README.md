@@ -13,7 +13,7 @@ Una plataforma de código abierto que conecta y muestra las comunidades tecnoló
 
 ## 📋 Estructura del Proyecto
 
-\`\`\`
+```
 ├── app/                    # Páginas del router de Next.js
 │   ├── page.tsx           # Página de inicio
 │   ├── communities/       # Directorio de comunidades
@@ -31,7 +31,7 @@ Una plataforma de código abierto que conecta y muestra las comunidades tecnoló
 │   ├── events.ts         # Datos de eventos
 │   └── sponsors.ts       # Datos de patrocinadores
 └── public/               # Recursos estáticos
-\`\`\`
+```
 
 ## 🚀 Comenzar
 
@@ -42,7 +42,7 @@ Una plataforma de código abierto que conecta y muestra las comunidades tecnoló
 
 ### Instalación
 
-\`\`\`bash
+```bash
 # Clona el repositorio
 git clone https://github.com/aileenvl/mexico-tech-community-website.git
 
@@ -54,7 +54,7 @@ npm install
 
 # Ejecuta el servidor de desarrollo
 npm run dev
-\`\`\`
+```
 
 Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación.
 
@@ -70,22 +70,22 @@ Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación.
 
 2. **Clona tu fork**
 
-   \`\`\`bash
+   ```bash
    git clone https://github.com/aileenvl/mexico-tech-community-website.git
    cd mexico-tech-community-website
-   \`\`\`
+   ```
 
 3. **Crea una nueva rama**
 
-   \`\`\`bash
+   ```bash
    git checkout -b agregar-comunidad-NOMBRE
-   \`\`\`
+   ```
 
 4. **Edita el archivo `data/communities.ts`**
 
    Agrega tu comunidad al array `communitiesData`:
 
-   \`\`\`typescript
+   ```typescript
    {
      id: "tu-comunidad-mty", // Identificador único (minúsculas con guiones)
      name: "Tu Comunidad Name", // Nombre en inglés
@@ -118,7 +118,7 @@ Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación.
        },
      ],
    }
-   \`\`\`
+   ```
 
 5. **Agrega el logo de tu comunidad**
 
@@ -128,19 +128,19 @@ Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación.
 
 6. **Prueba localmente**
 
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
    Verifica que tu comunidad aparezca correctamente en http://localhost:3000/communities
 
 7. **Haz commit de tus cambios**
 
-   \`\`\`bash
+   ```bash
    git add .
    git commit -m "Agregar comunidad: [Nombre de tu comunidad]"
    git push origin agregar-comunidad-NOMBRE
-   \`\`\`
+   ```
 
 8. **Crea un Pull Request**
    - Ve a tu fork en GitHub
@@ -156,7 +156,7 @@ Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación.
 
    Agrega tu evento al array `eventsData`:
 
-   \`\`\`typescript
+   ```typescript
    {
      id: "nombre-evento-2025", // Identificador único
      title: "Nombre del Evento", // Título del evento
@@ -169,7 +169,7 @@ Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación.
      attendees: 50, // Número esperado de asistentes
      link: "https://eventlink.com/tu-evento", // Link de registro o más información
    }
-   \`\`\`
+   ```
 
 3. **Verifica que la fecha sea correcta**
 
@@ -178,18 +178,18 @@ Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación.
 
 4. **Prueba localmente**
 
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
    Verifica que tu evento aparezca en http://localhost:3000/events
 
 5. **Haz commit y crea el Pull Request**
-   \`\`\`bash
+   ```bash
    git add .
    git commit -m "Agregar evento: [Nombre del evento]"
    git push origin agregar-evento-NOMBRE
-   \`\`\`
+   ```
 
 ### Convertirse en Patrocinador
 
@@ -201,7 +201,7 @@ Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación.
 
    Agrega tu organización al array `sponsorsData`:
 
-   \`\`\`typescript
+   ```typescript
    {
      id: "tu-organizacion", // Identificador único
      name: "Tu Organización", // Nombre de la organización
@@ -210,7 +210,7 @@ Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación.
      logo: "TU ORG", // Texto corto o siglas para el logo
      website: "https://tuorganizacion.com", // Sitio web
    }
-   \`\`\`
+   ```
 
 3. **Tipos de patrocinio:**
 
@@ -218,18 +218,18 @@ Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación.
    - `"space"`: Espacios físicos, venues, oficinas para eventos
 
 4. **Prueba, commit y Pull Request**
-   \`\`\`bash
+   ```bash
    npm run dev # Prueba localmente
    git add .
    git commit -m "Agregar patrocinador: [Nombre de la organización]"
    git push origin agregar-patrocinador-NOMBRE
-   \`\`\`
+   ```
 
 ## 📅 Referencia de Formatos de Datos
 
 ### Estructura de Comunidades
 
-\`\`\`typescript
+```typescript
 interface Community {
   id: string; // Identificador único (ej: "gdg-monterrey")
   name: string; // Nombre en inglés
@@ -253,11 +253,11 @@ interface Community {
   };
   contacts: Contact[]; // Array de contactos
 }
-\`\`\`
+```
 
 ### Estructura de Eventos
 
-\`\`\`typescript
+```typescript
 interface Event {
   id: string; // Identificador único
   title: string; // Título del evento
@@ -270,11 +270,11 @@ interface Event {
   attendees: number; // Número de asistentes
   link?: string; // Link de registro (opcional)
 }
-\`\`\`
+```
 
 ### Estructura de Patrocinadores
 
-\`\`\`typescript
+```typescript
 interface Sponsor {
   id: string; // Identificador único
   name: string; // Nombre de la organización
@@ -283,7 +283,7 @@ interface Sponsor {
   logo?: string; // Texto del logo
   website?: string; // Sitio web
 }
-\`\`\`
+```
 
 ## ✅ Reglas de Validación
 
@@ -324,12 +324,12 @@ La plataforma usa:
 
 ## 🔧 Comandos Disponibles
 
-\`\`\`bash
+```bash
 npm run dev       # Inicia el servidor de desarrollo
 npm run build     # Construye la aplicación para producción
 npm run start     # Inicia el servidor de producción
 npm run lint      # Ejecuta el linter
-\`\`\`
+```
 
 ## 🐛 Reportar Problemas
 

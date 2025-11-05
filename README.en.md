@@ -13,7 +13,7 @@ An open-source platform connecting and showcasing tech communities in México, M
 
 ## 📋 Project Structure
 
-\`\`\`
+```
 ├── app/                    # Next.js app router pages
 │   ├── page.tsx           # Homepage
 │   ├── communities/       # Communities directory
@@ -31,7 +31,7 @@ An open-source platform connecting and showcasing tech communities in México, M
 │   ├── events.ts         # Events data
 │   └── sponsors.ts       # Sponsors data
 └── public/               # Static assets
-\`\`\`
+```
 
 ## 🚀 Getting Started
 
@@ -42,7 +42,7 @@ An open-source platform connecting and showcasing tech communities in México, M
 
 ### Installation
 
-\`\`\`bash
+```bash
 # Clone the repository
 git clone https://github.com/aileenvl/mexico-tech-community-website.git
 
@@ -54,7 +54,7 @@ npm install
 
 # Run development server
 npm run dev
-\`\`\`
+```
 
 Open [http://localhost:3000](http://localhost:3000) to view the app.
 
@@ -70,22 +70,22 @@ We welcome all contributions! Here's how to add your community, event, or become
 
 2. **Clone your fork**
 
-   \`\`\`bash
+   ```bash
    git clone https://github.com/aileenvl/mexico-tech-community-website.git
    cd mexico-tech-community-website
-   \`\`\`
+   ```
 
 3. **Create a new branch**
 
-   \`\`\`bash
+   ```bash
    git checkout -b add-community-NAME
-   \`\`\`
+   ```
 
 4. **Edit the `data/communities.ts` file**
 
    Add your community to the `communitiesData` array:
 
-   \`\`\`typescript
+   ```typescript
    {
      id: "your-community-mty", // Unique identifier (lowercase with hyphens)
      name: "Your Community Name", // Name in English
@@ -118,7 +118,7 @@ We welcome all contributions! Here's how to add your community, event, or become
        },
      ],
    }
-   \`\`\`
+   ```
 
 5. **Add your community logo**
 
@@ -128,19 +128,19 @@ We welcome all contributions! Here's how to add your community, event, or become
 
 6. **Test locally**
 
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
    Verify your community appears correctly at http://localhost:3000/communities
 
 7. **Commit your changes**
 
-   \`\`\`bash
+   ```bash
    git add .
    git commit -m "Add community: [Your Community Name]"
    git push origin add-community-NAME
-   \`\`\`
+   ```
 
 8. **Create a Pull Request**
    - Go to your fork on GitHub
@@ -156,7 +156,7 @@ We welcome all contributions! Here's how to add your community, event, or become
 
    Add your event to the `eventsData` array:
 
-   \`\`\`typescript
+   ```typescript
    {
      id: "event-name-2025", // Unique identifier
      title: "Event Name", // Event title
@@ -169,7 +169,7 @@ We welcome all contributions! Here's how to add your community, event, or become
      attendees: 50, // Expected number of attendees
      link: "https://eventlink.com/your-event", // Registration or info link
    }
-   \`\`\`
+   ```
 
 3. **Verify the date is correct**
 
@@ -178,18 +178,18 @@ We welcome all contributions! Here's how to add your community, event, or become
 
 4. **Test locally**
 
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
    Verify your event appears at http://localhost:3000/events
 
 5. **Commit and create Pull Request**
-   \`\`\`bash
+   ```bash
    git add .
    git commit -m "Add event: [Event Name]"
    git push origin add-event-NAME
-   \`\`\`
+   ```
 
 ### Becoming a Sponsor
 
@@ -201,7 +201,7 @@ Does your organization support tech communities in Monterrey? Join as a sponsor!
 
    Add your organization to the `sponsorsData` array:
 
-   \`\`\`typescript
+   ```typescript
    {
      id: "your-organization", // Unique identifier
      name: "Your Organization", // Organization name
@@ -210,7 +210,7 @@ Does your organization support tech communities in Monterrey? Join as a sponsor!
      logo: "YOUR ORG", // Short text or acronym for logo
      website: "https://yourorganization.com", // Website
    }
-   \`\`\`
+   ```
 
 3. **Sponsorship types:**
 
@@ -218,18 +218,18 @@ Does your organization support tech communities in Monterrey? Join as a sponsor!
    - `"space"`: Physical spaces, venues, offices for events
 
 4. **Test, commit, and Pull Request**
-   \`\`\`bash
+   ```bash
    npm run dev # Test locally
    git add .
    git commit -m "Add sponsor: [Organization Name]"
    git push origin add-sponsor-NAME
-   \`\`\`
+   ```
 
 ## 📅 Data Format Reference
 
 ### Communities Structure
 
-\`\`\`typescript
+```typescript
 interface Community {
   id: string; // Unique identifier (e.g., "gdg-monterrey")
   name: string; // Name in English
@@ -253,11 +253,11 @@ interface Community {
   };
   contacts: Contact[]; // Array of contacts
 }
-\`\`\`
+```
 
 ### Events Structure
 
-\`\`\`typescript
+```typescript
 interface Event {
   id: string; // Unique identifier
   title: string; // Event title
@@ -270,11 +270,11 @@ interface Event {
   attendees: number; // Number of attendees
   link?: string; // Registration link (optional)
 }
-\`\`\`
+```
 
 ### Sponsors Structure
 
-\`\`\`typescript
+```typescript
 interface Sponsor {
   id: string; // Unique identifier
   name: string; // Organization name
@@ -283,7 +283,7 @@ interface Sponsor {
   logo?: string; // Logo text
   website?: string; // Website
 }
-\`\`\`
+```
 
 ## ✅ Validation Rules
 
@@ -324,12 +324,12 @@ The platform uses:
 
 ## 🔧 Available Commands
 
-\`\`\`bash
+```bash
 npm run dev       # Start development server
 npm run build     # Build for production
 npm run start     # Start production server
 npm run lint      # Run linter
-\`\`\`
+```
 
 ## 🐛 Report Issues
 
