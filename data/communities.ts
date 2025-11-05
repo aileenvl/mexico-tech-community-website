@@ -12,7 +12,7 @@ export interface Community {
   category?: string;
   meetups?: number;
   links?: {
-    [key: string]: string,
+    [key: string]: string;
   };
   state: string;
   stateEs: string;
@@ -26,7 +26,7 @@ export interface Contact {
   bio?: string;
   bioEs?: string;
   socials: {
-    [key: string]: string,
+    [key: string]: string;
   };
 }
 
@@ -66,8 +66,7 @@ export const communitiesData: Community[] = [
         role: "Organizer",
         roleEs: "Organizador",
         bio: "Software Engineer",
-        bioEs:
-          "Ingeniero de software",
+        bioEs: "Ingeniero de software",
         socials: {
           website: "https://ushieru.com",
           linkedin: "https://www.linkedin.com/in/uzielcocolan/",
@@ -128,13 +127,7 @@ export const communitiesData: Community[] = [
     descriptionEs:
       "Una comunidad de desarrolladores y creadores que construyen con Supabase, Postgres y herramientas modernas de desarrollo web. Organizamos meetups, talleres y demos abiertas.",
     focus: ["Supabase", "Postgres", "Next.js", "TypeScript", "Open Source"],
-    focusEs: [
-      "Supabase",
-      "Postgres",
-      "Next.js",
-      "TypeScript",
-      "Código Abierto",
-    ],
+    focusEs: ["Supabase", "Postgres", "Next.js", "TypeScript", "Código Abierto"],
     members: 0,
     category: "Backend / Database",
     meetups: 4,
@@ -208,20 +201,8 @@ export const communitiesData: Community[] = [
       "Python community in Puebla. A group of Python enthusiasts sharing knowledge, best practices, and building projects together. From beginners to experts, all Pythonistas are welcome.",
     descriptionEs:
       "Comunidad Pythonista en Puebla. Un grupo de entusiastas de Python compartiendo conocimiento, mejores prácticas y construyendo proyectos juntos. Desde principiantes hasta expertos, todos los Pythonistas son bienvenidos.",
-    focus: [
-      "Python",
-      "Data Science",
-      "Machine Learning",
-      "Web Development",
-      "Backend",
-    ],
-    focusEs: [
-      "Python",
-      "Ciencia de Datos",
-      "Machine Learning",
-      "Desarrollo Web",
-      "Backend",
-    ],
+    focus: ["Python", "Data Science", "Machine Learning", "Web Development", "Backend"],
+    focusEs: ["Python", "Ciencia de Datos", "Machine Learning", "Desarrollo Web", "Backend"],
     members: 150,
     meetups: 12,
     image: "/pytalavera.jpeg",
@@ -244,6 +225,43 @@ export const communitiesData: Community[] = [
     ],
     links: {
       linkedin: "https://linkedin.com/company/106000587",
+    },
+  },
+  {
+    id: "web-dev-talks-colima",
+    name: "Web Dev Talks Colima",
+    nameEs: "Web Dev Talks Colima",
+    description:
+      "Web Dev Talks (also known as WDT) is an independent community based in Colima, primarily focused on web development. With over 12 years of experience, we are the first and most diverse IT community in the state — bringing together not only developers, but also professionals in design, management, QA, and other areas.",
+    descriptionEs:
+      "Web Dev Talks (también conocida como WDT) es una comunidad independiente en Colima, enfocada principalmente en desarrollo web. Con 10 años de trayectoria, somos la primera y más diversa comunidad de IT en el estado, incluyendo no solo desarrolladores, sino también profesionales de diseño, management, QA y otras areas.",
+    focus: ["AI", "Backend", "Frontend", "Web Development", "Mobile Development", "Technology"],
+    focusEs: ["AI", "Backend", "Frontend", "Desarrollo Web", "Desarrollo Móvil", "Tecnología"],
+    members: 10,
+    category: "Technology / Web Development",
+    meetups: 1,
+    image: "/wdt-colima.png",
+    state: "Colima",
+    stateEs: "Colima",
+    city: "Colima",
+    contacts: [
+      {
+        name: "Miguel Oceguera",
+        role: "Co-Organizer",
+        roleEs: "Co-Organizador",
+        bio: "Software engineer, community organizer and passionate about Observability, web, mobile, and 3D experiences. Co-organizer of JSConf México and Web Dev Talks Colima.",
+        bioEs:
+          "Ingeniero de software, organizador de comunidades y apasionado por la Observabilidad, desarrollo web, móvil y las experiencias 3D. Co-organizador de JSConf México y Web Dev Talks Colima.",
+        socials: {
+          twitter: "https://x.com/mikeoceguera",
+          linkedin: "https://www.linkedin.com/in/miguelocegueram/",
+          github: "https://github.com/MiguelOcegueraM",
+        },
+      },
+    ],
+    links: {
+      linkedin: "https://linkedin.com/company/web-dev-talks",
+      website: "https://www.webdevtalks.mx/",
     },
   },
   {
@@ -295,4 +313,5 @@ export const MEXICAN_STATES = [
   { id: "GTO", name: "Guanajuato", nameEs: "Guanajuato" },
   { id: "SLP", name: "San Luis Potosí", nameEs: "San Luis Potosí" },
   { id: "TAMPS", name: "Tamaulipas", nameEs: "Tamaulipas" },
+  { id: "COL", name: "Colima", nameEs: "Colima" },
 ];
