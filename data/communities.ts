@@ -212,7 +212,7 @@ export const communitiesData: Community[] = [
     descriptionEs:
       "Web Dev Talks (también conocida como WDT) es una comunidad independiente en Colima, enfocada principalmente en desarrollo web. Con 10 años de trayectoria, somos la primera y más diversa comunidad de IT en el estado, incluyendo no solo desarrolladores, sino también profesionales de diseño, management, QA y otras areas.",
     focus: ["AI", "Backend", "Frontend", "Web Development", "Mobile Development", "Technology"],
-    focusEs: ["AI", "Backend", "Frontend", "Web Development", "Mobile Development", "Technology"],
+    focusEs: ["AI", "Backend", "Frontend", "Desarrollo Web", "Desarrollo Móvil", "Tecnología"],
     members: 10,
     category: "Technology / Web Development",
     meetups: 1,
@@ -236,7 +236,7 @@ export const communitiesData: Community[] = [
       },
     ],
     links: {
-      linkedin: "linkedin.com/company/web-dev-talks",
+      linkedin: "https://linkedin.com/company/web-dev-talks",
       website: "https://www.webdevtalks.mx/",
     },
   },
