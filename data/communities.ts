@@ -12,10 +12,7 @@ export interface Community {
   category?: string;
   meetups?: number;
   links?: {
-    twitter?: string;
-    linkedin?: string;
-    github?: string;
-    website?: string;
+    [key: string]: string,
   };
   state: string;
   stateEs: string;

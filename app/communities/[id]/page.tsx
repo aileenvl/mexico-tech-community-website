@@ -141,46 +141,19 @@ export default async function CommunityDetailPage({
         <section className="container mx-auto px-4 py-12 border-t border-border">
           <h2 className="text-3xl font-bold mb-8">Enlaces / Links</h2>
           <div className="flex flex-wrap gap-4">
-            {community.links.website && (
-              <a
-                href={community.links.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-all"
-              >
-                Visitar Sitio / Visit Website
-              </a>
-            )}
-            {community.links.twitter && (
-              <a
-                href={community.links.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-card border border-border rounded-lg font-medium hover:bg-muted transition-all"
-              >
-                Twitter
-              </a>
-            )}
-            {community.links.github && (
-              <a
-                href={community.links.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-card border border-border rounded-lg font-medium hover:bg-muted transition-all"
-              >
-                GitHub
-              </a>
-            )}
-            {community.links.linkedin && (
-              <a
-                href={community.links.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-card border border-border rounded-lg font-medium hover:bg-muted transition-all"
-              >
-                LinkedIn
-              </a>
-            )}
+            {
+              Object.entries(community.links).map(([key, value]) =>
+                <a
+                  key={key}
+                  href={value}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-card border border-border rounded-lg font-medium hover:bg-muted transition-all"
+                >
+                  <span className="capitalize">{key}</span>
+                </a>
+              )
+            }
           </div>
         </section>
       )}
