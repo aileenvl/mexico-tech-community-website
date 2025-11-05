@@ -40,4 +40,18 @@ export const eventsData: Event[] = [
     attendees: 50,
     link: "https://luma.com/m4w80tw3",
   },
+  {
+    id: "posadev-2025",
+    title: "PosaDev 2025",
+    description:
+      "El evento anual que conecta, inspira y fortalece las comunidades de tecnología. Hecho con amor para la comunidad tech. Explora desde desarrollo de software hasta diseño UX, gestión de proyectos, testing y cada disciplina que impulsa la transformación digital.",
+    date: "2025-12-06",
+    time: "09:00",
+    location:
+      "Centro de Congresos del Tecnológico de Monterrey, Campus Guadalajara, Av. General Ramón Corona 2515C, Valle Real, Zapopan",
+    city: "Guadalajara",
+    community: "PosaDev",
+    attendees: 200,
+    link: "https://posadev.org/",
+  },
 ];
