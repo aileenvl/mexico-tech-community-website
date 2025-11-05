@@ -67,4 +67,17 @@ export const eventsData: Event[] = [
     attendees: 200,
     link: "https://posadev.org/",
   },
+  {
+    id: "devfest-tijuana-2025",
+    title: "DevFest Tijuana 2025",
+    description:
+      "DevFest es la conferencia insignia de los Google Developer Groups. DevFest Tijuana reúne a desarrolladores locales para charlas, talleres y actividades de networking sobre IA, Android, Web, Firebase y tecnologías en la nube.",
+    date: "2025-12-06",
+    time: "14:00",
+    location: "Hibrido en Tijuana: En linea y presencial(lugar por confirmar)",
+    city: "Tijuana",
+    community: "GDG Tijuana",
+    attendees: 300,
+    link: "https://gdg.community.dev/events/details/google-gdg-tijuana-presents-devfest-tijuana-2025-kickoff-event/",
+  },
 ];

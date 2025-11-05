@@ -299,6 +299,42 @@ export const communitiesData: Community[] = [
       website: "https://awsugmixtli.com",
     },
   },
+  {
+    id: "gdg-tijuana",
+    name: "GDG Tijuana",
+    nameEs: "GDG Tijuana",
+    description:
+      "Official Google Developer Group in Tijuana. A community of developers, designers, and innovators sharing knowledge on web, mobile, AI, and cloud technologies.",
+    descriptionEs:
+      "Grupo oficial de Desarrolladores de Google en Tijuana. Comunidad de desarrolladores, diseñadores e innovadores que comparten conocimiento sobre tecnologías web, móviles, de IA y la nube.",
+    focus: ["Web", "Android", "AI/ML", "Cloud", "Firebase"],
+    focusEs: ["Web", "Android", "IA/ML", "Nube", "Firebase"],
+    members: 34,
+    category: "General Tech",
+    meetups: 1,
+    image: "/gdg-tijuana.png",
+    state: "Baja California",
+    stateEs: "Baja California",
+    city: "Tijuana",
+    contacts: [
+      {
+          name: "Gabriel Garcia Perez",
+          role: "Organizer",
+          roleEs: "Organizador",
+          bio: "Systems engineer. Organizer of GDG Tijuana with experience in software development, cybersecurity and digital forensics. Trainer and mentor focused on developer experience and community growth.",
+          bioEs:
+            "Ingeniero en Sistemas Computacionales. Organizador de GDG Tijuana con experiencia en desarrollo de software, ciberseguridad e informática forense. Capacitador y mentor enfocado en la experiencia del desarrollador y el crecimiento de la comunidad.",
+          socials: {
+            github: "https://github.com/GarciaG1",
+            linkedin: "https://www.linkedin.com/in/gabriel-garcia-perez-626291214/"
+          },
+      },
+    ],
+    links: {
+      website: "https://gdg.community.dev/gdg-tijuana/",
+      instagram: "https://www.instagram.com/gdg_tijuana/",
+    },
+  },
 ];
 
 export const MEXICAN_STATES = [
