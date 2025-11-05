@@ -16,7 +16,7 @@ export default function CommunitiesPage() {
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [language, setLanguage] = useState<"es" | "en">("es")
   const userLocation = useUserLocation()
-  const [selectedState, setSelectedState] = useState<string>("")
+  const [selectedState, setSelectedState] = useState<string>("All States")
 
   // Set selected state from detected location on first load
   useEffect(() => {
@@ -35,6 +35,7 @@ export default function CommunitiesPage() {
         community.descriptionEs.toLowerCase().includes(searchTerm)
 
       const matchesCategory = selectedCategory === "All" || community.category === selectedCategory
+
       const matchesState = !selectedState || selectedState === "All States" || selectedState === "Todos los Estados" || community.state === selectedState
 
       return matchesSearch && matchesCategory && matchesState

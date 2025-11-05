@@ -17,7 +17,7 @@ export function CommunityCard({ community, language }: CommunityCardProps) {
   return (
     <div className="bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all hover:shadow-lg">
       {/* Community Image */}
-      <div className="relative h-40 bg-muted overflow-hidden">
+      <div className="relative h-40 bg-gray overflow-hidden">
         <img
           src={community.image || "/placeholder.svg?height=160&width=400"}
           alt={name}

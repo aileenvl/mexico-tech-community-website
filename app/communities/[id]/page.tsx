@@ -35,7 +35,7 @@ export default async function CommunityDetailPage({
       <section className="container mx-auto px-4 py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           {/* Image */}
-          <div className="rounded-lg overflow-hidden h-96 bg-muted flex items-center justify-center">
+          <div className="rounded-lg overflow-hidden h-96 bg-gray flex items-center justify-center">
             <img
               src={community.image || "/placeholder.svg?height=400&width=600"}
               alt={community.name}
@@ -117,55 +117,19 @@ export default async function CommunityDetailPage({
 
               {/* Social Links */}
               <div className="space-y-2">
-                {contact.socials.email && (
-                  <a
-                    href={`mailto:${contact.socials.email}`}
-                    className="flex items-center gap-2 text-primary hover:underline text-sm"
-                  >
-                    <Mail size={16} />
-                    {contact.socials.email}
-                  </a>
-                )}
-                {contact.socials.twitter && (
-                  <a
-                    href={contact.socials.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-primary hover:underline text-sm"
-                  >
-                    Twitter: {contact.socials.twitter}
-                  </a>
-                )}
-                {contact.socials.linkedin && (
-                  <a
-                    href={contact.socials.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-primary hover:underline text-sm"
-                  >
-                    LinkedIn: {contact.socials.linkedin}
-                  </a>
-                )}
-                {contact.socials.github && (
-                  <a
-                    href={contact.socials.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-primary hover:underline text-sm"
-                  >
-                    GitHub: {contact.socials.github}
-                  </a>
-                )}
-                {contact.socials.website && (
-                  <a
-                    href={contact.socials.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-primary hover:underline text-sm"
-                  >
-                    Website: {contact.socials.website}
-                  </a>
-                )}
+                {
+                  Object.entries(contact.socials).map(([key, value]) =>
+                    <a
+                      key={key}
+                      href={key == 'email' ? `mailto:${value}` : value}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-primary hover:underline text-sm"
+                    >
+                      <span className="capitalize">{key}</span>: {value}
+                    </a>
+                  )
+                }
               </div>
             </div>
           ))}
@@ -177,46 +141,19 @@ export default async function CommunityDetailPage({
         <section className="container mx-auto px-4 py-12 border-t border-border">
           <h2 className="text-3xl font-bold mb-8">Enlaces / Links</h2>
           <div className="flex flex-wrap gap-4">
-            {community.links.website && (
-              <a
-                href={community.links.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-all"
-              >
-                Visitar Sitio / Visit Website
-              </a>
-            )}
-            {community.links.twitter && (
-              <a
-                href={community.links.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-card border border-border rounded-lg font-medium hover:bg-muted transition-all"
-              >
-                Twitter
-              </a>
-            )}
-            {community.links.github && (
-              <a
-                href={community.links.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-card border border-border rounded-lg font-medium hover:bg-muted transition-all"
-              >
-                GitHub
-              </a>
-            )}
-            {community.links.linkedin && (
-              <a
-                href={community.links.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-card border border-border rounded-lg font-medium hover:bg-muted transition-all"
-              >
-                LinkedIn
-              </a>
-            )}
+            {
+              Object.entries(community.links).map(([key, value]) =>
+                <a
+                  key={key}
+                  href={value}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-card border border-border rounded-lg font-medium hover:bg-muted transition-all"
+                >
+                  <span className="capitalize">{key}</span>
+                </a>
+              )
+            }
           </div>
         </section>
       )}
