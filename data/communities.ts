@@ -371,6 +371,79 @@ export const communitiesData: Community[] = [
       youtube: "https://www.youtube.com/playlist?list=PLnLzwYW6HOC4KYwDLCWuZt1uaufBmc_Tz",
       telegram: "https://t.me/RustMX"
     },
+  },
+   {
+    id: "php-mexico",
+    name: "PHP Mexico",
+    nameEs: "PHP México",
+    description:
+      "PHP Mexico is a community of PHP developers and enthusiasts in Mexico. We promote best practices, share knowledge, and organize meetups to strengthen the PHP ecosystem across the country. From beginners to advanced developers, all PHPeros are welcome.",
+    descriptionEs:
+      "PHP México es una comunidad de desarrolladores y entusiastas de PHP en México. Promovemos las mejores prácticas, compartimos conocimiento y organizamos meetups para fortalecer el ecosistema PHP en todo el país. Desde principiantes hasta desarrolladores avanzados, todos los PHPeros son bienvenidos.",
+    focus: ["PHP", "Backend", "Web Development", "Laravel", "Symfony"],
+    focusEs: ["PHP", "Backend", "Desarrollo Web", "Laravel", "Symfony"],
+    members: 1616,
+    category: "Backend / Database",
+    meetups: 115,
+    image: "/php-mexico.png",
+    state: "Ciudad de México",
+    stateEs: "Ciudad de México",
+    city: "Ciudad de México",
+    contacts: [
+      {
+        name: "PHP Mexico Team",
+        role: "Community Organizers",
+        roleEs: "Organizadores de Comunidad",
+        socials: {},
+      },
+    ],
+    links: {
+      website: "https://phpmexico.mx/",
+      twitter: "https://twitter.com/phpmx",
+      facebook: "https://www.facebook.com/pehacheperos",
+      meetup: "https://www.meetup.com/es-ES/PHP-The-Right-Way/",
+      instagram: "https://www.instagram.com/phpmx/",
+      slack: "https://join.slack.com/t/phpmx/shared_invite/zt-3a188halw-o05hyFNG~qEmW9Ci_g1kuQ",
+    },
+  },
+  {
+    id: "gophers-mx",
+    name: "Gophers MX y Amigos",
+    nameEs: "Gophers MX y Amigos",
+    description:
+      "Gophers MX is a community of Go developers and enthusiasts in Mexico. We share knowledge, best practices, and organize events to strengthen the Go ecosystem. From beginners to experts, all Gophers are welcome to learn and grow together.",
+    descriptionEs:
+      "Gophers MX es una comunidad de desarrolladores y entusiastas de Go en México. Compartimos conocimiento, mejores prácticas y organizamos eventos para fortalecer el ecosistema de Go. Desde principiantes hasta expertos, todos los Gophers son bienvenidos a aprender y crecer juntos.",
+    focus: ["Go", "Backend", "Cloud", "Microservices", "DevOps"],
+    focusEs: ["Go", "Backend", "Nube", "Microservicios", "DevOps"],
+    members: 659,
+    category: "Backend / Database",
+    meetups: 0,
+    image: "/gophers-mx-y-amigos.png",
+    state: "Ciudad de México",
+    stateEs: "Ciudad de México",
+    city: "Ciudad de México",
+    contacts: [
+      {
+        name: "Daniel Vergara",
+        role: "Organizer",
+        roleEs: "Organizador",
+        socials: {},
+      },
+      {
+        name: "Rodrigo Patiño",
+        role: "Organizer",
+        roleEs: "Organizador",
+        socials: {},
+      },
+    ],
+    links: {
+      website: "https://gophers-mx.github.io/gophers-mx/",
+      telegram: "https://t.me/golangmx",
+      github: "https://github.com/gophers-mx",
+      facebook: "https://www.facebook.com/groups/es.golang.mx",
+      twitter: "https://twitter.com/gophersmx",
+    },
   }
 ];
 
