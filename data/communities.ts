@@ -335,6 +335,43 @@ export const communitiesData: Community[] = [
       instagram: "https://www.instagram.com/gdg_tijuana/",
     },
   },
+  {
+    id: "rust-mx",
+    name: "RustMX",
+    nameEs: "RustMX",
+    description: "RustMX is a community of developers in Mexico who learn, share, and collaborate around the Rust programming language, whether for embedded systems, AI, web frontends, backends, or interoperability. Join, share, and connect with others who love Rust.",
+    descriptionEs: "RustMX es una comunidad de desarrolladores en México que aprenden, comparten y colaboran en torno al lenguaje de programación Rust, ya sea en sistemas embebidos, inteligencia artificial, frontends web, backends o interoperabilidad. Participa, comparte y conecta con otros apasionados por Rust.",
+    focus: ["Rust", "AI/ML", "Cloud", "Embedded", "Backend", "Frontend", "Web Development"],
+    focusEs: ["Rust", "AI/ML", "Cloud", "Embedded", "Backend", "Frontend", "Desarrollo Web"],
+    members: 1347,
+    category: "General Tech",
+    meetups: 82,
+    image: '/rust-mx.png',
+    state: "Ciudad de México",
+    stateEs: "Ciudad de México",
+    city: "Ciudad de México",
+    contacts: [
+      {
+          name: "Gustavo De la Cruz Tovar",
+          role: "Organizer",
+          roleEs: "Organizador",
+          bio: "Enterprise & Cloud Architect especializado en AWS, ML/AI y DevOps. PMP, TOGAF, ITIL, IT4IT y AWS Certified (Associate & Professional). Lego Serious Play Facilitator. Más de 20 años liderando proyectos de transformación digital en LATAM.",
+          bioEs:
+            "Senior Delivery Consultant en AWS. Profesor de Data Science, Machine Learning e IA en La Salle México. Ingeniero Cibernético con Maestría en Métodos Matemáticos Aplicados a Finanzas. Rust evangelist y apasionado por la innovación y la docencia.",
+          socials: {
+            github: "https://github.com/gusdelact",
+            linkedin: "https://www.linkedin.com/in/gusdelact/"
+          },
+      },
+    ],
+    links: {
+      website: "https://rustmx.github.io",
+      twitter: "https://twitter.com/rustlang_mx",
+      meetup: "https://www.meetup.com/rust-mx/",
+      youtube: "https://www.youtube.com/playlist?list=PLnLzwYW6HOC4KYwDLCWuZt1uaufBmc_Tz",
+      telegram: "https://t.me/RustMX"
+    },
+  }
 ];
 
 export const MEXICAN_STATES = [
