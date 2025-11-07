@@ -384,14 +384,6 @@ Próximas funcionalidades planeadas:
 
 Este proyecto es de código abierto y está disponible bajo una licencia permisiva.
 
-## 🤝 Agradecimientos
-
-Gracias a todas las comunidades tecnológicas de Monterrey que hacen posible este proyecto:
-
-- Google Developer Group Monterrey
-- Supabase Monterrey
-- Cursor Community Monterrey
-- Y muchas más por venir...
 
 ## 📞 Contacto
 
