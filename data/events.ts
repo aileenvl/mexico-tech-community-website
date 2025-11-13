@@ -80,4 +80,17 @@ export const eventsData: Event[] = [
     attendees: 300,
     link: "https://gdg.community.dev/events/details/google-gdg-tijuana-presents-devfest-tijuana-2025-kickoff-event/",
   },
+  {
+    id: "supabase-meetup-villahermosa",
+    title: "Supabase Meetup Villahermosa",
+    description:
+      "🚀 ¡Únete al Supabase Meetup Villahermosa! Ven a conocer a otros desarrolladores, aprender sobre tecnologías modernas y compartir ideas con la comunidad. 🙌",
+    date: "2025-11-13",
+    time: "18:00",
+    location: "LATI.mx Plaza Deportiva",
+    city: "Villahermosa",
+    community: "Dev Night Talks Villahermosa",
+    attendees: 20,
+    link: "https://luma.com/cifrnv92",
+  },
 ];

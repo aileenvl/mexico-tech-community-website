@@ -39,8 +39,28 @@ export const communitiesData: Community[] = [
       "Official Google Developer Group in Guadalajara. A community of developers, designers, and innovators sharing knowledge on web, mobile, AI, and cloud technologies.",
     descriptionEs:
       "Grupo oficial de Desarrolladores de Google en Guadalajara. Una comunidad de desarrolladores, diseñadores e innovadores que comparten conocimiento sobre tecnologías web, móviles, de IA y la nube.",
-    focus: ["Web", "Mobile", "AI/ML", "Cloud", "Community", "Career Development", "Firebase", "Gemini", "Networking"],
-    focusEs: ["Web", "Desarrollo Móvil", "IA/ML", "Nube", "Comunidad", "Desarrollo de Carreras", "Firebase", "Gemini", "Networking"],
+    focus: [
+      "Web",
+      "Mobile",
+      "AI/ML",
+      "Cloud",
+      "Community",
+      "Career Development",
+      "Firebase",
+      "Gemini",
+      "Networking",
+    ],
+    focusEs: [
+      "Web",
+      "Desarrollo Móvil",
+      "IA/ML",
+      "Nube",
+      "Comunidad",
+      "Desarrollo de Carreras",
+      "Firebase",
+      "Gemini",
+      "Networking",
+    ],
     members: 550,
     category: "General Tech",
     meetups: 5,
@@ -127,7 +147,13 @@ export const communitiesData: Community[] = [
     descriptionEs:
       "Una comunidad de desarrolladores y creadores que construyen con Supabase, Postgres y herramientas modernas de desarrollo web. Organizamos meetups, talleres y demos abiertas.",
     focus: ["Supabase", "Postgres", "Next.js", "TypeScript", "Open Source"],
-    focusEs: ["Supabase", "Postgres", "Next.js", "TypeScript", "Código Abierto"],
+    focusEs: [
+      "Supabase",
+      "Postgres",
+      "Next.js",
+      "TypeScript",
+      "Código Abierto",
+    ],
     members: 0,
     category: "Backend / Database",
     meetups: 4,
@@ -201,8 +227,20 @@ export const communitiesData: Community[] = [
       "Python community in Puebla. A group of Python enthusiasts sharing knowledge, best practices, and building projects together. From beginners to experts, all Pythonistas are welcome.",
     descriptionEs:
       "Comunidad Pythonista en Puebla. Un grupo de entusiastas de Python compartiendo conocimiento, mejores prácticas y construyendo proyectos juntos. Desde principiantes hasta expertos, todos los Pythonistas son bienvenidos.",
-    focus: ["Python", "Data Science", "Machine Learning", "Web Development", "Backend"],
-    focusEs: ["Python", "Ciencia de Datos", "Machine Learning", "Desarrollo Web", "Backend"],
+    focus: [
+      "Python",
+      "Data Science",
+      "Machine Learning",
+      "Web Development",
+      "Backend",
+    ],
+    focusEs: [
+      "Python",
+      "Ciencia de Datos",
+      "Machine Learning",
+      "Desarrollo Web",
+      "Backend",
+    ],
     members: 150,
     meetups: 12,
     image: "/pytalavera.jpeg",
@@ -235,8 +273,22 @@ export const communitiesData: Community[] = [
       "Web Dev Talks (also known as WDT) is an independent community based in Colima, primarily focused on web development. With over 12 years of experience, we are the first and most diverse IT community in the state — bringing together not only developers, but also professionals in design, management, QA, and other areas.",
     descriptionEs:
       "Web Dev Talks (también conocida como WDT) es una comunidad independiente en Colima, enfocada principalmente en desarrollo web. Con 10 años de trayectoria, somos la primera y más diversa comunidad de IT en el estado, incluyendo no solo desarrolladores, sino también profesionales de diseño, management, QA y otras areas.",
-    focus: ["AI", "Backend", "Frontend", "Web Development", "Mobile Development", "Technology"],
-    focusEs: ["AI", "Backend", "Frontend", "Desarrollo Web", "Desarrollo Móvil", "Tecnología"],
+    focus: [
+      "AI",
+      "Backend",
+      "Frontend",
+      "Web Development",
+      "Mobile Development",
+      "Technology",
+    ],
+    focusEs: [
+      "AI",
+      "Backend",
+      "Frontend",
+      "Desarrollo Web",
+      "Desarrollo Móvil",
+      "Tecnología",
+    ],
     members: 10,
     category: "Technology / Web Development",
     meetups: 1,
@@ -318,16 +370,17 @@ export const communitiesData: Community[] = [
     city: "Tijuana",
     contacts: [
       {
-          name: "Gabriel Garcia Perez",
-          role: "Organizer",
-          roleEs: "Organizador",
-          bio: "Systems engineer. Organizer of GDG Tijuana with experience in software development, cybersecurity and digital forensics. Trainer and mentor focused on developer experience and community growth.",
-          bioEs:
-            "Ingeniero en Sistemas Computacionales. Organizador de GDG Tijuana con experiencia en desarrollo de software, ciberseguridad e informática forense. Capacitador y mentor enfocado en la experiencia del desarrollador y el crecimiento de la comunidad.",
-          socials: {
-            github: "https://github.com/GarciaG1",
-            linkedin: "https://www.linkedin.com/in/gabriel-garcia-perez-626291214/"
-          },
+        name: "Gabriel Garcia Perez",
+        role: "Organizer",
+        roleEs: "Organizador",
+        bio: "Systems engineer. Organizer of GDG Tijuana with experience in software development, cybersecurity and digital forensics. Trainer and mentor focused on developer experience and community growth.",
+        bioEs:
+          "Ingeniero en Sistemas Computacionales. Organizador de GDG Tijuana con experiencia en desarrollo de software, ciberseguridad e informática forense. Capacitador y mentor enfocado en la experiencia del desarrollador y el crecimiento de la comunidad.",
+        socials: {
+          github: "https://github.com/GarciaG1",
+          linkedin:
+            "https://www.linkedin.com/in/gabriel-garcia-perez-626291214/",
+        },
       },
     ],
     links: {
@@ -339,40 +392,59 @@ export const communitiesData: Community[] = [
     id: "rust-mx",
     name: "RustMX",
     nameEs: "RustMX",
-    description: "RustMX is a community of developers in Mexico who learn, share, and collaborate around the Rust programming language, whether for embedded systems, AI, web frontends, backends, or interoperability. Join, share, and connect with others who love Rust.",
-    descriptionEs: "RustMX es una comunidad de desarrolladores en México que aprenden, comparten y colaboran en torno al lenguaje de programación Rust, ya sea en sistemas embebidos, inteligencia artificial, frontends web, backends o interoperabilidad. Participa, comparte y conecta con otros apasionados por Rust.",
-    focus: ["Rust", "AI/ML", "Cloud", "Embedded", "Backend", "Frontend", "Web Development"],
-    focusEs: ["Rust", "AI/ML", "Cloud", "Embedded", "Backend", "Frontend", "Desarrollo Web"],
+    description:
+      "RustMX is a community of developers in Mexico who learn, share, and collaborate around the Rust programming language, whether for embedded systems, AI, web frontends, backends, or interoperability. Join, share, and connect with others who love Rust.",
+    descriptionEs:
+      "RustMX es una comunidad de desarrolladores en México que aprenden, comparten y colaboran en torno al lenguaje de programación Rust, ya sea en sistemas embebidos, inteligencia artificial, frontends web, backends o interoperabilidad. Participa, comparte y conecta con otros apasionados por Rust.",
+    focus: [
+      "Rust",
+      "AI/ML",
+      "Cloud",
+      "Embedded",
+      "Backend",
+      "Frontend",
+      "Web Development",
+    ],
+    focusEs: [
+      "Rust",
+      "AI/ML",
+      "Cloud",
+      "Embedded",
+      "Backend",
+      "Frontend",
+      "Desarrollo Web",
+    ],
     members: 1347,
     category: "General Tech",
     meetups: 82,
-    image: '/rust-mx.png',
+    image: "/rust-mx.png",
     state: "Ciudad de México",
     stateEs: "Ciudad de México",
     city: "Ciudad de México",
     contacts: [
       {
-          name: "Gustavo De la Cruz Tovar",
-          role: "Organizer",
-          roleEs: "Organizador",
-          bio: "Enterprise & Cloud Architect especializado en AWS, ML/AI y DevOps. PMP, TOGAF, ITIL, IT4IT y AWS Certified (Associate & Professional). Lego Serious Play Facilitator. Más de 20 años liderando proyectos de transformación digital en LATAM.",
-          bioEs:
-            "Senior Delivery Consultant en AWS. Profesor de Data Science, Machine Learning e IA en La Salle México. Ingeniero Cibernético con Maestría en Métodos Matemáticos Aplicados a Finanzas. Rust evangelist y apasionado por la innovación y la docencia.",
-          socials: {
-            github: "https://github.com/gusdelact",
-            linkedin: "https://www.linkedin.com/in/gusdelact/"
-          },
+        name: "Gustavo De la Cruz Tovar",
+        role: "Organizer",
+        roleEs: "Organizador",
+        bio: "Enterprise & Cloud Architect especializado en AWS, ML/AI y DevOps. PMP, TOGAF, ITIL, IT4IT y AWS Certified (Associate & Professional). Lego Serious Play Facilitator. Más de 20 años liderando proyectos de transformación digital en LATAM.",
+        bioEs:
+          "Senior Delivery Consultant en AWS. Profesor de Data Science, Machine Learning e IA en La Salle México. Ingeniero Cibernético con Maestría en Métodos Matemáticos Aplicados a Finanzas. Rust evangelist y apasionado por la innovación y la docencia.",
+        socials: {
+          github: "https://github.com/gusdelact",
+          linkedin: "https://www.linkedin.com/in/gusdelact/",
+        },
       },
     ],
     links: {
       website: "https://rustmx.github.io",
       twitter: "https://twitter.com/rustlang_mx",
       meetup: "https://www.meetup.com/rust-mx/",
-      youtube: "https://www.youtube.com/playlist?list=PLnLzwYW6HOC4KYwDLCWuZt1uaufBmc_Tz",
-      telegram: "https://t.me/RustMX"
+      youtube:
+        "https://www.youtube.com/playlist?list=PLnLzwYW6HOC4KYwDLCWuZt1uaufBmc_Tz",
+      telegram: "https://t.me/RustMX",
     },
   },
-   {
+  {
     id: "php-mexico",
     name: "PHP Mexico",
     nameEs: "PHP México",
@@ -403,7 +475,8 @@ export const communitiesData: Community[] = [
       facebook: "https://www.facebook.com/pehacheperos",
       meetup: "https://www.meetup.com/es-ES/PHP-The-Right-Way/",
       instagram: "https://www.instagram.com/phpmx/",
-      slack: "https://join.slack.com/t/phpmx/shared_invite/zt-3a188halw-o05hyFNG~qEmW9Ci_g1kuQ",
+      slack:
+        "https://join.slack.com/t/phpmx/shared_invite/zt-3a188halw-o05hyFNG~qEmW9Ci_g1kuQ",
     },
   },
   {
@@ -444,7 +517,140 @@ export const communitiesData: Community[] = [
       facebook: "https://www.facebook.com/groups/es.golang.mx",
       twitter: "https://twitter.com/gophersmx",
     },
-  }
+  },
+  {
+    id: "dev-night-talks",
+    name: "Dev Night Talks Villahermosa",
+    nameEs: "Dev Night Talks Villahermosa",
+    description:
+      "Dev Night Talks is a space for developers and tech enthusiasts looking to share experiences, learn together, and build community. Every week we meet to talk about software development, tools, best practices, and tech trends. Join us and be part of a community passionate about code and collaboration!",
+    descriptionEs:
+      "Dev Night Talks es un espacio para desarrolladores y entusiastas de la tecnología que buscan compartir experiencias, aprender juntos y hacer comunidad. Cada semana nos reunimos para hablar de desarrollo de software, herramientas, buenas prácticas y tendencias del mundo tech. ¡Únete y sé parte de una comunidad apasionada por el código y la colaboración!",
+    focus: [
+      "Web",
+      "Mobile",
+      "AI/ML",
+      "Backend",
+      "Frontend",
+      "Cloud",
+      "Microservices",
+      "DevOps",
+      "Community",
+      "Open Source",
+      "Entrepreneurship",
+    ],
+    focusEs: [
+      "Web",
+      "Mobile",
+      "AI/ML",
+      "Backend",
+      "Frontend",
+      "Cloud",
+      "Microservices",
+      "DevOps",
+      "Community",
+      "Open Source",
+      "Entrepreneurship",
+    ],
+    members: 175,
+    category: "General Tech",
+    meetups: 56,
+    image: "/dev-night-talks-villahermosa.png",
+    state: "Tabasco",
+    stateEs: "Tabasco",
+    city: "Villahermosa",
+    contacts: [
+      {
+        name: "Gustavo Jimenez",
+        role: "Organizer",
+        roleEs: "Organizador",
+        bio: "Software developer with over 8 years of experience. Founder and leader of the AWS User Group Villahermosa and organizer of Dev Night Talks. Passionate about code, sharing knowledge with the community, and a coffee entrepreneur who applies technology to solve real-world, everyday problems.",
+        bioEs:
+          "Desarrollador de software con más de 8 años de experiencia. Fundador y líder del AWS User Group Villahermosa y organizador de Dev Night Talks. Apasionado por el código, compartir conocimiento con la comunidad y emprendedor cafetero que aplica tecnología para resolver problemas reales del día a día.",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/jimenezdev/",
+        },
+      },
+      {
+        name: "Cesa Méndez",
+        role: "Data Engineer & Organizer",
+        roleEs: "Data Engineer y Organizador",
+        bio: "Passionate about data and code, I have 8+ years in the tech industry, working on IoT for Smart Cities in Saudi Arabia, Oil & Gas analytics in Mexico, currently working as data engineer for AI applications and services. Also, a NASA Space Apps Challenge finalist and organizer also lead of multiple dev communities in villahermosa like aws-ug and github",
+        bioEs:
+          "Apasionado por los datos y el código, cuento con más de 8 años de experiencia en la industria tecnológica, trabajando en IoT para ciudades inteligentes en Arabia Saudita, análisis de datos para la industria del petróleo y el gas en México, y actualmente me desempeño como ingeniero de datos para aplicaciones y servicios de IA. Además, fui finalista y organizador del NASA Space Apps Challenge y líder de varias comunidades de desarrolladores en Villahermosa, como aws-ug y GitHub.",
+        socials: {
+          github: "https://github.com/devcsar",
+          linkedin: "https://www.linkedin.com/in/devcsar",
+          AwsBuilder: "https://builder.aws.com/community/@devcsar",
+          instagram: "https://www.instagram.com/csar.dev?igsh=MWtkcHgxYmE4NzJq",
+        },
+      },
+    ],
+    links: {
+      website: "http://devnighttalks.com",
+      tiktok: "https://www.tiktok.com/@devnighttalks",
+      instagram: "https://www.instagram.com/devnighttalks",
+      meetup: "https://www.meetup.com/dev-night-talks/",
+    },
+  },
+  {
+    id: "supabase-villahermosa",
+    name: "Supabase Villahermosa",
+    nameEs: "Supabase Villahermosa",
+    description:
+      "Join the developer community in Villahermosa, Tabasco for a Supabase Meetup, the open-source development platform that's revolutionizing how web and mobile applications are built. During the event, you'll learn more about the tools and services Supabase offers—such as Postgres databases, authentication, storage, and serverless features—and how to easily integrate them into your projects.",
+    descriptionEs:
+      "Únete a la comunidad de desarrolladores en Villahermosa, Tabasco para un Meetup de Supabase, la plataforma de desarrollo open source que está revolucionando la forma de construir aplicaciones web y móviles. Durante el evento conocerás más sobre las herramientas y servicios que ofrece Supabase —como bases de datos Postgres, autenticación, almacenamiento y funciones serverless— y cómo integrarlas fácilmente en tus proyectos.",
+    focus: [
+      "Supabase",
+      "Postgres",
+      "Javascript",
+      "React JS",
+      "Next.js",
+      "TypeScript",
+      "Open Source",
+      "Automatización",
+      "Data Analytics",
+    ],
+    focusEs: [
+      "Supabase",
+      "Postgres",
+      "Javascript",
+      "React JS",
+      "Next.js",
+      "TypeScript",
+      "Open Source",
+      "Automatización",
+      "Data Analytics",
+    ],
+    members: 0,
+    category: "Backend / Database",
+    meetups: 2,
+    image: "/supabase.png",
+    state: "Tabasco",
+    stateEs: "Tabasco",
+    city: "Villahermosa",
+    contacts: [
+      {
+        name: "Aarón López Sosa",
+        role: "FrontEnd Engineer & Organizer",
+        roleEs: "Building the web one script at a time 🚀",
+        bio: "I am a Frontend Engineer with 7+ years of experience in JavaScript, React.js, and React Native, focused on building responsive and user-friendly web and mobile apps. I am passionate about creating clean, scalable code and collaborating across teams to deliver impactful, high-performance products. Always open to sharing ideas and exploring new opportunities.",
+        bioEs:
+          "Soy ingeniero frontend con más de 7 años de experiencia en JavaScript, React.js y React Native, especializado en el desarrollo de aplicaciones web y móviles responsivas y fáciles de usar. Me apasiona crear código limpio y escalable, y colaborar con otros equipos para desarrollar productos impactantes y de alto rendimiento. Siempre estoy abierto a compartir ideas y explorar nuevas oportunidades.",
+        socials: {
+          github: "https://github.com/alsvader",
+          linkedin: "www.linkedin.com/in/aaronlopezsosa93",
+          tiktok: "https://www.tiktok.com/@codewithaaron",
+          email: "aaronlopezsosa@gmail.com",
+        },
+      },
+    ],
+    links: {
+      twitter: "https://twitter.com/supabase",
+      website: "https://supabase.com",
+    },
+  },
 ];
 
 export const MEXICAN_STATES = [
@@ -458,6 +664,7 @@ export const MEXICAN_STATES = [
   { id: "COAH", name: "Coahuila", nameEs: "Coahuila" },
   { id: "GTO", name: "Guanajuato", nameEs: "Guanajuato" },
   { id: "SLP", name: "San Luis Potosí", nameEs: "San Luis Potosí" },
+  { id: "TAB", name: "Tabasco", nameEs: "Tabasco" },
   { id: "TAMPS", name: "Tamaulipas", nameEs: "Tamaulipas" },
   { id: "COL", name: "Colima", nameEs: "Colima" },
 ];
