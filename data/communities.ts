@@ -651,6 +651,50 @@ export const communitiesData: Community[] = [
       website: "https://supabase.com",
     },
   },
+  {
+    id: "kcd-mexico",
+    name: "KCD Mexico",
+    nameEs: "KCD México",
+    description:
+      "KCD Mexico is an official community event of the Cloud Native Computing Foundation (CNCF) that brings together developers, professionals, and enthusiasts of cloud native and open source technologies in the country.",
+    descriptionEs:
+      "KCD México es un evento comunitario oficial de la Cloud Native Computing Foundation (CNCF) que reúne a desarrolladores, profesionales y entusiastas de tecnologías cloud native y open source en el país.",
+    focus: [
+      "Kubernetes",
+      "Helm",
+      "Prometheus",
+    ],
+    focusEs: [
+      "Kubernetes",
+      "Helm",
+      "Prometheus",
+    ],
+    members: 500,
+    category: "Kubernetes / CNCF",
+    meetups: 2,
+    image: "/kcd-mexico.png",
+    state: "Jalisco",
+    stateEs: "Jalisco",
+    city: "Guadalajara",
+    contacts: [
+      {
+        name: "Eduardo Salazar",
+        role: "SRE & Organizer",
+        roleEs: "SRE y Organizador",
+        bio: "Eduardo Salazar Carrillo is a Site Reliability Engineer with extensive experience in cloud native technologies, DevOps, and data analysis.",
+        bioEs:
+          "Eduardo Salazar Carrillo es un ingeniero especializado en confiabilidad de sitios (Site Reliability Engineer) con amplia experiencia en tecnologías cloud native, DevOps y análisis de datos.",
+        socials: {
+          github: "https://github.com/eduardoSalazarCarrillo",
+          linkedin: "https://www.linkedin.com/in/eduardo-salazar-carrillo-1984-eric-blair/",
+        },
+      },
+    ],
+    links: {
+      twitter: "https://x.com/kcd_mexico",
+      linkedin: "https://www.linkedin.com/showcase/kcd-m%C3%A9xico/",
+    },
+  },
 ];
 
 export const MEXICAN_STATES = [
