@@ -1,4 +1,14 @@
 # Plataforma Tech Community Global
+![Unit Tests](https://github.com/mariotristan/mexico-tech-community-website/actions/workflows/test.yml/badge.svg)
+![Build Status](https://github.com/mariotristan/mexico-tech-community-website/actions/workflows/build.yml/badge.svg)
+![License](https://img.shields.io/github/license/mariotristan/mexico-tech-community-website)
+![Version](https://img.shields.io/github/package-json/v/mariotristan/mexico-tech-community-website/main)
+![Last Commit](https://img.shields.io/github/last-commit/mariotristan/mexico-tech-community-website)
+![Open Issues](https://img.shields.io/github/issues/mariotristan/mexico-tech-community-website)
+![Pull Requests](https://img.shields.io/github/issues-pr/mariotristan/mexico-tech-community-website)
+![Contributors](https://img.shields.io/github/contributors/mariotristan/mexico-tech-community-website)
+
+![Unit Tests](https://github.com/mariotristan/mexico-tech-community-website/actions/workflows/test.yml/badge.svg)
 
 Una plataforma de código abierto que conecta comunidades tecnológicas en todo el mundo. Fomentando la colaboración, el crecimiento y la innovación a través de fronteras. Actualmente activa en México, con expansión global en camino.
 
