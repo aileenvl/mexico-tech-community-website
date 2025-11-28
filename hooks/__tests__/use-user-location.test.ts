@@ -51,7 +51,7 @@ describe('useUserLocation', () => {
   it('returns default location initially', () => {
     const { result } = renderHook(() => useUserLocation());
     expect(result.current.state).toBe('Nuevo León');
-    expect(result.current.detected).toBe(true);
+    expect(result.current.detected).toBe(false); // Default is not detected unless timezone matches
     expect(result.current.loading).toBe(false);
   });
 });
