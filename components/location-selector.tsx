@@ -10,7 +10,7 @@ interface LocationSelectorProps {
   language: "en" | "es"
 }
 
-export function LocationSelector({ selectedState, onStateChange, language }: LocationSelectorProps) {
+function LocationSelector({ selectedState, onStateChange, language }: LocationSelectorProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [searchTerm, setSearchTerm] = useState("")
 
@@ -102,3 +102,5 @@ export function LocationSelector({ selectedState, onStateChange, language }: Loc
     </div>
   )
 }
+
+export default LocationSelector;
