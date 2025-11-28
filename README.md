@@ -32,6 +32,18 @@ Una plataforma de código abierto que conecta comunidades tecnológicas en todo 
 
 [English version](./README.en.md)
 
+
+## 🧪 Pruebas Unitarias
+
+Para ejecutar las pruebas unitarias y verificar la cobertura:
+
+```bash
+npm test           # Ejecuta todos los tests
+npm run coverage   # Muestra el reporte de cobertura
+```
+
+Esto utiliza Jest y React Testing Library. Los resultados se mostrarán en la terminal y, si usas `npm run coverage`, se generará un reporte en la carpeta `/coverage`.
+
 ## 🌟 Características
 
 - **Red Global** - Conecta con ecosistemas tecnológicos de diferentes países (México activo actualmente)
