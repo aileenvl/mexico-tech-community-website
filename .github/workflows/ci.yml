@@ -1,4 +1,4 @@
-name: Run Unit Tests
+name: CI
 
 on:
   push:
@@ -20,3 +20,18 @@ jobs:
         run: npm install --legacy-peer-deps
       - name: Run unit tests
         run: npm test
+
+  build:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+      - name: Build project
+        run: npm run build
