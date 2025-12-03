@@ -9,10 +9,10 @@
       <td>Version</td>
    </tr>
    <tr>
-      <td><img src="https://github.com/mariotristan/mexico-tech-community-website/actions/workflows/ci.yml/badge.svg?branch=main&event=push" alt="Unit Tests & Build Status"></td>
-      <td><img src="https://github.com/mariotristan/mexico-tech-community-website/actions/workflows/ci.yml/badge.svg?branch=main&event=push" alt="Build Status"></td>
-      <td><img src="https://img.shields.io/github/license/mariotristan/mexico-tech-community-website" alt="License"></td>
-      <td><img src="https://img.shields.io/github/package-json/v/mariotristan/mexico-tech-community-website/main" alt="Version"></td>
+      <td><img src="https://github.com/aileenvl/mexico-tech-community-website/actions/workflows/ci.yml/badge.svg?branch=main&event=push" alt="Unit Tests & Build Status"></td>
+      <td><img src="https://github.com/aileenvl/mexico-tech-community-website/actions/workflows/ci.yml/badge.svg?branch=main&event=push" alt="Build Status"></td>
+      <td><img src="https://img.shields.io/github/license/aileenvl/mexico-tech-community-website" alt="License"></td>
+      <td><img src="https://img.shields.io/github/package-json/v/aileenvl/mexico-tech-community-website/main" alt="Version"></td>
    </tr>
    <tr>
       <td>Last Commit</td>
@@ -21,10 +21,10 @@
       <td>Contributors</td>
    </tr>
    <tr>
-      <td><img src="https://img.shields.io/github/last-commit/mariotristan/mexico-tech-community-website" alt="Last Commit"></td>
-      <td><img src="https://img.shields.io/github/issues/mariotristan/mexico-tech-community-website" alt="Open Issues"></td>
-      <td><img src="https://img.shields.io/github/issues-pr/mariotristan/mexico-tech-community-website" alt="Pull Requests"></td>
-      <td><img src="https://img.shields.io/github/contributors/mariotristan/mexico-tech-community-website" alt="Contributors"></td>
+      <td><img src="https://img.shields.io/github/last-commit/aileenvl/mexico-tech-community-website" alt="Last Commit"></td>
+      <td><img src="https://img.shields.io/github/issues/aileenvl/mexico-tech-community-website" alt="Open Issues"></td>
+      <td><img src="https://img.shields.io/github/issues-pr/aileenvl/mexico-tech-community-website" alt="Pull Requests"></td>
+      <td><img src="https://img.shields.io/github/contributors/aileenvl/mexico-tech-community-website" alt="Contributors"></td>
    </tr>
 </table>
 
