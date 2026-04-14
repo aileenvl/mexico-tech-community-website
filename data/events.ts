@@ -9,6 +9,8 @@ export interface Event {
   community: string;
   attendees: number;
   link?: string;
+  source?: "manual" | "luma" | "meetup";
+  country?: "MX" | "US";
 }
 
 export const eventsData: Event[] = [
