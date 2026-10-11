@@ -35,7 +35,7 @@ export default async function CommunityDetailPage({
       <section className="container mx-auto px-4 py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           {/* Image */}
-          <div className="rounded-lg overflow-hidden h-96 bg-gray flex items-center justify-center">
+          <div className="rounded-lg overflow-hidden h-96 bg-card dark:bg-white/90 flex items-center justify-center">
             <img
               src={community.image || "/placeholder.svg?height=400&width=600"}
               alt={community.name}

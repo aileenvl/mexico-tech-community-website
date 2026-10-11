@@ -35,7 +35,7 @@ export default function Home() {
           src="/globe.png"
           alt="Global Network"
           fill
-          className="object-contain"
+          className="object-contain dark:invert dark:hue-rotate-180"
           priority
         />
       </div>

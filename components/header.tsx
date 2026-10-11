@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Menu, X, Globe } from "lucide-react"
 import { usePathname } from "next/navigation"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -69,6 +70,7 @@ export function Header() {
 
         {/* Right Side Actions */}
         <div className="hidden md:flex items-center gap-4">
+          <ThemeToggle />
           {!isLanding ? (
             <button className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-border hover:bg-muted transition-colors text-sm font-medium">
               <Globe size={16} />
@@ -86,10 +88,13 @@ export function Header() {
           )}
         </div>
 
-        {/* Mobile Menu Button */}
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile Actions */}
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
+          <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
 
         {/* Mobile Navigation */}
         {isOpen && (

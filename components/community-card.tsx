@@ -21,7 +21,7 @@ export function CommunityCard({ community, language }: CommunityCardProps) {
       <div className="flex justify-between items-start mb-6">
         <div className="w-12 h-12 rounded-full bg-muted/50 flex items-center justify-center text-xl font-bold overflow-hidden">
            {community.image ? (
-             <img src={community.image} alt={name} className="w-full h-full object-cover" />
+             <img src={community.image} alt={name} className="w-full h-full object-cover dark:bg-white" />
            ) : (
              <span>{name.charAt(0)}</span>
            )}
